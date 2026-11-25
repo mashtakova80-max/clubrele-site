@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сведения об образовательной организации — Клуб РЕЛЕ</title>
+<meta name="description" content="Сведения об образовательной организации ЧОУ «СОШ РЕЛЕ»: документы, образование, педагогический состав, платные услуги.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#007dbf; --blue:#1a86c7; --orange:#f3921c; --light:#eef4fb;
+  --ink:#1f2733; --muted:#5b6b80; --line:#dce7f4; --white:#fff;
+  --shadow:0 10px 30px rgba(0,125,191,.14); --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;color:var(--ink);line-height:1.6;background:var(--white);overflow-x:hidden}
+h1,h2,h3,h4,.brandfont{font-family:'Montserrat',sans-serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1160px,92%);margin:0 auto}
+.hero .container>*,.grid>*,.split>*,.cbox>*,.nav>*{min-width:0}
+h1,h2,h3,p{overflow-wrap:break-word}
+iframe{max-width:100%}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;font-weight:700;font-family:'Montserrat';
+  padding:14px 26px;border-radius:999px;transition:.2s;border:none;cursor:pointer;font-size:15px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(243,146,28,.35)}
+.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff;box-shadow:none}
+.tag{display:inline-block;background:var(--light);color:var(--blue);font-weight:700;font-family:'Montserrat';
+  font-size:13px;letter-spacing:.5px;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.sec{padding:78px 0}
+.sec h2{font-size:clamp(26px,4vw,38px);color:var(--navy);font-weight:800;line-height:1.15;margin-bottom:14px}
+.sec .lead{color:var(--muted);font-size:18px;max-width:720px;margin-bottom:40px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Montserrat';font-weight:800;color:var(--navy);font-size:20px}
+.logo img{height:46px}
+.menu{display:flex;align-items:center;gap:26px;list-style:none}
+.menu a{font-family:'Montserrat';font-weight:600;font-size:15px;color:var(--navy);transition:.2s}
+.menu a:hover{color:var(--orange)}
+.nav .btn{padding:11px 22px;font-size:14px}
+#burger,.burger{display:none}
+.burger{cursor:pointer;font-size:28px;color:var(--navy);line-height:1}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(120deg,#00598a 0%,#007dbf 55%,#1a5a9c 100%);color:#fff;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(243,146,28,.35),transparent 70%)}
+.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:70px 0}
+.hero h1{font-size:clamp(30px,4.6vw,50px);font-weight:800;line-height:1.1}
+.hero h1 span{color:var(--orange)}
+.hero p{font-size:19px;color:#d6e4f5;margin:20px 0 30px;max-width:520px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .heroimg{border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35);border:6px solid rgba(255,255,255,.12)}
+.hero .heroimg img{width:100%;height:420px;object-fit:cover}
+.badges{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}
+.badge b{font-family:'Montserrat';font-size:30px;font-weight:800;color:#fff;display:block;line-height:1}
+.badge span{color:#bcd2ee;font-size:13px}
+
+/* features */
+.grid{display:grid;gap:24px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.card .ic{width:52px;height:52px;border-radius:14px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
+.card h3{color:var(--navy);font-size:19px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+
+/* courses */
+.courses{background:var(--light)}
+.course{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.course .ph{height:180px;background:var(--navy);position:relative;overflow:hidden}
+.course .ph img{width:100%;height:100%;object-fit:cover}
+.course .bd{padding:22px;flex:1;display:flex;flex-direction:column}
+.course h3{color:var(--navy);font-size:19px;margin-bottom:8px}
+.course p{color:var(--muted);font-size:14.5px;flex:1}
+.course .pill{align-self:flex-start;margin-top:14px;background:var(--light);color:var(--blue);font-weight:700;
+  font-family:'Montserrat';font-size:12px;padding:6px 12px;border-radius:999px}
+.course.wide{grid-column:span 2}
+.vkgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 22px}
+.vkgrid.c3{grid-template-columns:repeat(3,1fr);gap:30px 26px}
+.vk{display:flex;flex-direction:column;text-decoration:none;color:inherit;min-width:0}
+.vk img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;display:block;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.vk:hover img{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,61,110,.22)}
+.vk .pr{margin-top:10px;font-size:17px;color:#111}.vk .pr b{font-weight:800}
+.pr s,.vk .pr s{color:#8a97a8;font-weight:500;font-size:15px;margin-left:4px}
+.vk .nm{color:var(--muted);font-size:15px;margin-top:2px;line-height:1.3}
+.courses .more{color:var(--navy);font-size:22px;margin:52px 0 22px}
+.courses .addr{margin-top:38px;color:var(--muted);font-size:15px}
+.modal{display:none;position:fixed;inset:0;z-index:200;overflow:auto;padding:24px}
+.modal:target{display:block}
+.modal .back{position:fixed;inset:0;background:rgba(8,28,52,.62);cursor:default}
+.modal .box{position:relative;max-width:880px;margin:3vh auto;background:#fff;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:340px 1fr;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.modal .box>img{width:100%;height:auto;object-fit:cover;aspect-ratio:1/1;align-self:start}
+.modal .tx{padding:30px 32px}
+.modal .tx h3{color:var(--navy);font-size:24px;margin:10px 0 6px}
+.modal .pr.big{font-size:22px;margin:0 0 14px}
+.modal .pain{color:var(--navy);font-weight:700;margin-bottom:8px}
+.modal .tx p{color:#334;font-size:15.5px;margin-bottom:10px}
+.modal .facts{list-style:none;margin:12px 0 14px;padding:0;font-size:14.5px;color:#223}
+.modal .facts li{padding:6px 0 6px 18px;position:relative;border-top:1px solid #e6eef7}
+.modal .facts li::before{content:"•";position:absolute;left:4px;color:var(--orange);font-weight:700}
+.modal .tx h4{color:var(--navy);font-size:15px;margin:14px 0 4px;font-family:'Montserrat'}
+.modal .prog{margin:0 0 6px 18px;padding:0;font-size:14.5px;color:#334}.modal .prog li{margin:3px 0}
+.modal .addr{font-size:14px;color:var(--muted)!important}
+.modal .x{position:absolute;right:14px;top:8px;z-index:2;font-size:34px;line-height:1;color:#fff;text-decoration:none;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.modal .pill{display:inline-block;background:var(--light);color:var(--blue);font-weight:700;font-size:12px;padding:5px 12px;border-radius:999px}
+@media(max-width:900px){.vkgrid,.vkgrid.c3{grid-template-columns:repeat(2,1fr)}.modal .box{grid-template-columns:1fr}.modal .box>img{aspect-ratio:1/1;max-height:340px;object-position:top}}
+@media(max-width:420px){.vkgrid{gap:20px 12px}.vk .pr{font-size:15px}.vk .nm{font-size:13.5px}}
+
+
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split img{border-radius:20px;height:360px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+ul.check{list-style:none;margin-top:10px}
+ul.check li{position:relative;padding-left:30px;margin-bottom:12px;color:var(--ink)}
+ul.check li:before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;background:var(--orange);color:#fff;
+  border-radius:6px;font-size:13px;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* reviews */
+.rev{background:var(--navy);color:#fff}
+.rev h2{color:#fff}
+.rev .lead{color:#bcd2ee}
+.quote{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:26px}
+.quote p{color:#e5eefb;font-style:italic}
+.quote .who{margin-top:16px;font-family:'Montserrat';font-weight:700;color:var(--orange)}
+.stars{color:var(--orange);font-size:18px;margin-bottom:10px}
+
+/* reports */
+.report{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px}
+.report .doc{width:48px;height:48px;border-radius:12px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--blue)}
+.report b{font-family:'Montserrat';color:var(--navy)}
+.report .btn{margin-left:auto}
+
+/* svedeniya */
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;padding:18px 22px;font-family:'Montserrat';font-weight:700;color:var(--navy);list-style:none;display:flex;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--orange);font-size:22px}
+details[open] summary:after{content:"–"}
+details .in{padding:0 22px 20px;color:var(--muted);font-size:15px}
+details .in b{color:var(--ink)}
+
+/* contacts */
+.contacts{background:var(--light)}
+.cbox{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cinfo p{margin-bottom:14px;font-size:16px}
+.cinfo .k{font-family:'Montserrat';font-weight:700;color:var(--navy);display:block;font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat';font-weight:700;transition:.2s}
+.socials a:hover{background:var(--orange)}
+.map{border-radius:20px;overflow:hidden;min-height:320px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:320px;border:0}
+
+/* footer */
+footer{background:#00598a;color:#a9c1e0;padding:50px 0 26px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:30px}
+footer h4{color:#fff;font-size:16px;margin-bottom:14px;font-family:'Montserrat'}
+footer a{color:#a9c1e0}footer a:hover{color:#fff}
+footer .req{font-size:12.5px;line-height:1.7;color:#7f9bc2}
+footer .bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#7f9bc2;font-size:12.5px}
+
+@media(max-width:900px){
+  .menu{position:fixed;inset:64px 0 auto 0;background:#fff;flex-direction:column;gap:0;padding:10px 0;border-bottom:1px solid var(--line);
+    transform:translateY(-140%);transition:.3s;box-shadow:var(--shadow)}
+  .menu li{width:100%}.menu a{display:block;padding:14px 24px}
+  #burger:checked ~ .menu{transform:translateY(0)}
+  .burger{display:block}
+  .hero .container{grid-template-columns:1fr;padding:48px 0}
+  .hero .heroimg img{height:280px}
+  .hero p{font-size:17px}
+  .badges{gap:18px 22px}
+  .badge b{font-size:26px}
+  .g3,.g4,.split,.cbox,footer .cols{grid-template-columns:1fr}
+  .course.wide{grid-column:span 1}
+  .nav .btn.desktop{display:none}
+}
+@media(max-width:620px){.g4,.courses .grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Клуб РЕЛЕ">РЕЛЕ</a>
+    <input type="checkbox" id="burger"><label class="burger" for="burger">☰</label>
+    <ul class="menu">
+      <li><a href="index.html#about">О школе</a></li>
+      <li><a href="index.html#courses">Направления</a></li>
+      <li><a href="index.html#camps">Каникулы</a></li>
+      <li><a href="index.html#reviews">Отзывы</a></li>
+      <li><a href="index.html#reports">Отчёты</a></li>
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+    <a href="index.html#contacts" class="btn desktop">Записаться</a>
+  </div>
+</header>
+
+<!-- SVEDENIYA -->
+<section class="sec courses" id="svedeniya" style="min-height:60vh">
+  <div class="container">
+    <span class="tag">Обязательный раздел</span>
+    <h2>Сведения об образовательной организации</h2>
+    <p class="lead">Информация размещается в соответствии со ст. 29 ФЗ «Об образовании в РФ» и Постановлением Правительства РФ № 1802.</p>
+    <details open><summary>Основные сведения</summary><div class="in">
+      <b>Полное наименование:</b> Частное общеобразовательное учреждение «Средняя общеобразовательная школа “РЕЛЕ”».<br>
+      <b>Сокращённое:</b> ЧОУ «СОШ “РЕЛЕ”». <b>Дата создания:</b> 06.08.2021.<br>
+      <b>Учредитель, адрес, режим работы:</b> см. раздел «Контакты».</div></details>
+    <details><summary>Документы</summary><div class="in">Устав, лицензия на образовательную деятельность, свидетельство о государственной регистрации, локальные нормативные акты, правила приёма, отчёт о результатах самообследования, <a href="#reports" style="color:var(--blue)">публичные отчёты</a>. <em>(Загрузите сканы документов в этот раздел.)</em></div></details>
+    <details><summary>Образование</summary><div class="in">Реализуемые программы общего образования (1–9 классы) и дополнительного образования: робототехника, 3D-моделирование, скорочтение, английский язык, подготовка к школе, профпрактика и др. Формы обучения, сроки, численность обучающихся.</div></details>
+    <details><summary>Руководство и педагогический состав</summary><div class="in">Руководитель организации, сведения о педагогических работниках: должности, образование, квалификация, преподаваемые дисциплины. <em>(Заполните по актуальным данным команды.)</em></div></details>
+    <details><summary>Материально-техническое обеспечение</summary><div class="in">Оборудованные учебные кабинеты, робототехнические наборы и техника, условия питания и охраны здоровья, доступная среда, электронные образовательные ресурсы.</div></details>
+    <details><summary>Финансово-хозяйственная деятельность</summary><div class="in">Финансовое обеспечение осуществляется за счёт внебюджетных источников (оплата образовательных услуг). Бюджетное финансирование не привлекается. Объём образовательной деятельности по договорам об оказании платных образовательных услуг — <em>указывается за отчётный период</em>.</div></details>
+    <details><summary>Платные образовательные услуги</summary><div class="in">Порядок оказания платных образовательных услуг, образец договора, документ об утверждении стоимости обучения. Актуальные цены — по запросу и в разделе «Контакты».</div></details>
+    <details><summary>Вакантные места для приёма (перевода)</summary><div class="in">Информация о количестве вакантных мест по каждой образовательной программе. <em>(Обновляется по мере необходимости.)</em></div></details>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a href="index.html" class="logo" style="color:#fff;margin-bottom:14px"><img src="assets/img/logo.png" alt="РЕЛЕ" style="height:44px">РЕЛЕ</a>
+        <p class="req">Клуб реального образования и досуга РЕЛЕ.<br>Частная школа и центр развития детей в Санкт-Петербурге.<br>Также в ВКонтакте: «Семейная Не школа РЕЛЕ | СПб».</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <p><a href="index.html#about">О школе</a></p>
+        <p><a href="index.html#courses">Направления</a></p>
+        <p><a href="index.html#camps">Разумные каникулы</a></p>
+        <p><a href="index.html#reports">Публичные отчёты</a></p>
+        <p><a href="sveden.html">Сведения об образовательной организации</a></p>
+      </div>
+      <div>
+        <h4>Реквизиты</h4>
+        <p class="req">ЧОУ «СОШ “РЕЛЕ”»<br>ОГРН 1217800120834<br>ИНН 7806589730 · КПП 780601001<br>195160, СПб, Свердловская наб., д. 58, лит. А, пом. 46-Н</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2021–2026 ЧОУ «СОШ “РЕЛЕ”». Все права защищены.</span>
+      <span>clubrele.ru · vk.com/releclub · t.me/clubrele</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
