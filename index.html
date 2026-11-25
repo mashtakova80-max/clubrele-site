@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Клуб РЕЛЕ — частная школа и центр образования и досуга в Санкт-Петербурге</title>
+<meta name="description" content="Клуб реального образования и досуга РЕЛЕ (ЧОУ «СОШ РЕЛЕ»): частная школа 1–9 классов, робототехника, 3D-моделирование, скорочтение, английский, подготовка к школе, разумные каникулы. СПб, Свердловская наб., 60.">
+<meta property="og:title" content="Клуб РЕЛЕ — образование без стресса">
+<meta property="og:description" content="Частная школа и центр развития детей в Санкт-Петербурге. Робототехника, скорочтение, английский, подготовка к школе, каникулы.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#007dbf; --blue:#1a86c7; --orange:#f3921c; --light:#eef4fb;
+  --ink:#1f2733; --muted:#5b6b80; --line:#dce7f4; --white:#fff;
+  --shadow:0 10px 30px rgba(0,125,191,.14); --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;color:var(--ink);line-height:1.6;background:var(--white);overflow-x:hidden}
+h1,h2,h3,h4,.brandfont{font-family:'Montserrat',sans-serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1160px,92%);margin:0 auto}
+.hero .container>*,.grid>*,.split>*,.cbox>*,.nav>*{min-width:0}
+h1,h2,h3,p{overflow-wrap:break-word}
+iframe{max-width:100%}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;font-weight:700;font-family:'Montserrat';
+  padding:14px 26px;border-radius:999px;transition:.2s;border:none;cursor:pointer;font-size:15px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(243,146,28,.35)}
+.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff;box-shadow:none}
+.tag{display:inline-block;background:var(--light);color:var(--blue);font-weight:700;font-family:'Montserrat';
+  font-size:13px;letter-spacing:.5px;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.sec{padding:78px 0}
+.sec h2{font-size:clamp(26px,4vw,38px);color:var(--navy);font-weight:800;line-height:1.15;margin-bottom:14px}
+.sec .lead{color:var(--muted);font-size:18px;max-width:720px;margin-bottom:40px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Montserrat';font-weight:800;color:var(--navy);font-size:20px}
+.logo img{height:46px}
+.menu{display:flex;align-items:center;gap:26px;list-style:none}
+.menu a{font-family:'Montserrat';font-weight:600;font-size:15px;color:var(--navy);transition:.2s}
+.menu a:hover{color:var(--orange)}
+.nav .btn{padding:11px 22px;font-size:14px}
+#burger,.burger{display:none}
+.burger{cursor:pointer;font-size:28px;color:var(--navy);line-height:1}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(120deg,#00598a 0%,#007dbf 55%,#1a5a9c 100%);color:#fff;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(243,146,28,.35),transparent 70%)}
+.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:70px 0}
+.hero h1{font-size:clamp(30px,4.6vw,50px);font-weight:800;line-height:1.1}
+.hero h1 span{color:var(--orange)}
+.hero p{font-size:19px;color:#d6e4f5;margin:20px 0 30px;max-width:520px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .heroimg{border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35);border:6px solid rgba(255,255,255,.12)}
+.hero .heroimg img{width:100%;height:420px;object-fit:cover}
+.badges{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}
+.badge b{font-family:'Montserrat';font-size:30px;font-weight:800;color:#fff;display:block;line-height:1}
+.badge span{color:#bcd2ee;font-size:13px}
+
+/* features */
+.grid{display:grid;gap:24px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.card .ic{width:52px;height:52px;border-radius:14px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
+.card h3{color:var(--navy);font-size:19px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+
+/* courses */
+.courses{background:var(--light)}
+.course{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.course .ph{height:180px;background:var(--navy);position:relative;overflow:hidden}
+.course .ph img{width:100%;height:100%;object-fit:cover}
+.course .bd{padding:22px;flex:1;display:flex;flex-direction:column}
+.course h3{color:var(--navy);font-size:19px;margin-bottom:8px}
+.course p{color:var(--muted);font-size:14.5px;flex:1}
+.course .pill{align-self:flex-start;margin-top:14px;background:var(--light);color:var(--blue);font-weight:700;
+  font-family:'Montserrat';font-size:12px;padding:6px 12px;border-radius:999px}
+.course.wide{grid-column:span 2}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split img{border-radius:20px;height:360px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+ul.check{list-style:none;margin-top:10px}
+ul.check li{position:relative;padding-left:30px;margin-bottom:12px;color:var(--ink)}
+ul.check li:before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;background:var(--orange);color:#fff;
+  border-radius:6px;font-size:13px;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* reviews */
+.rev{background:var(--navy);color:#fff}
+.rev h2{color:#fff}
+.rev .lead{color:#bcd2ee}
+.quote{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:26px}
+.quote p{color:#e5eefb;font-style:italic}
+.quote .who{margin-top:16px;font-family:'Montserrat';font-weight:700;color:var(--orange)}
+.stars{color:var(--orange);font-size:18px;margin-bottom:10px}
+
+/* reports */
+.report{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px}
+.report .doc{width:48px;height:48px;border-radius:12px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--blue)}
+.report b{font-family:'Montserrat';color:var(--navy)}
+.report .btn{margin-left:auto}
+
+/* svedeniya */
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;padding:18px 22px;font-family:'Montserrat';font-weight:700;color:var(--navy);list-style:none;display:flex;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--orange);font-size:22px}
+details[open] summary:after{content:"–"}
+details .in{padding:0 22px 20px;color:var(--muted);font-size:15px}
+details .in b{color:var(--ink)}
+
+/* contacts */
+.contacts{background:var(--light)}
+.cbox{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cinfo p{margin-bottom:14px;font-size:16px}
+.cinfo .k{font-family:'Montserrat';font-weight:700;color:var(--navy);display:block;font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat';font-weight:700;transition:.2s}
+.socials a:hover{background:var(--orange)}
+.map{border-radius:20px;overflow:hidden;min-height:320px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:320px;border:0}
+
+/* footer */
+footer{background:#00598a;color:#a9c1e0;padding:50px 0 26px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:30px}
+footer h4{color:#fff;font-size:16px;margin-bottom:14px;font-family:'Montserrat'}
+footer a{color:#a9c1e0}footer a:hover{color:#fff}
+footer .req{font-size:12.5px;line-height:1.7;color:#7f9bc2}
+footer .bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#7f9bc2;font-size:12.5px}
+
+@media(max-width:900px){
+  .menu{position:fixed;inset:64px 0 auto 0;background:#fff;flex-direction:column;gap:0;padding:10px 0;border-bottom:1px solid var(--line);
+    transform:translateY(-140%);transition:.3s;box-shadow:var(--shadow)}
+  .menu li{width:100%}.menu a{display:block;padding:14px 24px}
+  #burger:checked ~ .menu{transform:translateY(0)}
+  .burger{display:block}
+  .hero .container{grid-template-columns:1fr;padding:48px 0}
+  .hero .heroimg img{height:280px}
+  .hero p{font-size:17px}
+  .badges{gap:18px 22px}
+  .badge b{font-size:26px}
+  .g3,.g4,.split,.cbox,footer .cols{grid-template-columns:1fr}
+  .course.wide{grid-column:span 1}
+  .nav .btn.desktop{display:none}
+}
+@media(max-width:620px){.g4,.courses .grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo"><img src="assets/img/logo.png" alt="Клуб РЕЛЕ">РЕЛЕ</a>
+    <input type="checkbox" id="burger"><label class="burger" for="burger">☰</label>
+    <ul class="menu">
+      <li><a href="#about">О школе</a></li>
+      <li><a href="#courses">Направления</a></li>
+      <li><a href="#camps">Каникулы</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#reports">Отчёты</a></li>
+      <li><a href="#svedeniya">Сведения</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+    <a href="#contacts" class="btn desktop">Записаться</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="tag" style="background:rgba(255,255,255,.12);color:#fff">Санкт-Петербург · с 2021 года</span>
+      <h1>Образование, где ребёнок <span>раскрывается</span>, а не выживает</h1>
+      <p>Частная школа и клуб реального образования и досуга РЕЛЕ. Малые группы, современные программы и живое семейное сообщество.</p>
+      <div class="actions">
+        <a href="#contacts" class="btn">Записаться на пробное</a>
+        <a href="#courses" class="btn ghost" style="color:#fff;border-color:#fff">Наши направления</a>
+      </div>
+      <div class="badges">
+        <div class="badge"><b>1–9</b><span>классы школы</span></div>
+        <div class="badge"><b>10+</b><span>направлений</span></div>
+        <div class="badge"><b>5,0</b><span>оценка родителей</span></div>
+        <div class="badge"><b>8–10</b><span>детей в группе</span></div>
+      </div>
+    </div>
+    <div class="heroimg"><img src="assets/img/hero.jpg" alt="Занятие в клубе РЕЛЕ"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="container">
+    <span class="tag">О школе</span>
+    <h2>Почему семьи выбирают РЕЛЕ</h2>
+    <p class="lead">Мы создаём место, где дети учатся без стресса, раскрывают потенциал и чувствуют поддержку — а образование сочетается с настоящим сообществом.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ic">👥</div><h3>Малые группы</h3><p>8–10 детей в группе: у каждого ребёнка есть внимание педагога и свой темп.</p></div>
+      <div class="card"><div class="ic">🧠</div><h3>Современные программы</h3><p>Робототехника, 3D, скорочтение, английский — навыки, которые пригодятся в будущем.</p></div>
+      <div class="card"><div class="ic">❤️</div><h3>Без стресса</h3><p>Дружелюбная среда и уважение к личности ребёнка вместо гонки и давления.</p></div>
+      <div class="card"><div class="ic">🎓</div><h3>Школа + допобразование</h3><p>Общее образование 1–9 классов и десятки развивающих курсов в одном месте.</p></div>
+      <div class="card"><div class="ic">🤝</div><h3>Семейное сообщество</h3><p>Мастер-классы, ярмарки, дни открытых дверей и события для всей семьи.</p></div>
+      <div class="card"><div class="ic">🚀</div><h3>Профориентация</h3><p>Курс «Формат мышления» и профпрактика помогают подросткам с осознанным выбором.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="sec courses" id="courses">
+  <div class="container">
+    <span class="tag">Направления</span>
+    <h2>Чему учим в РЕЛЕ</h2>
+    <p class="lead">Программы для дошкольников, школьников и подростков — от подготовки к школе до профориентации.</p>
+    <div class="grid g3">
+      <div class="course"><div class="ph"><img src="assets/img/robotics.jpg" alt="Робототехника"></div><div class="bd"><h3>Робототехника</h3><p>LEGO, EV3, программирование на Python. Логика, инженерия, участие в соревнованиях.</p><span class="pill">7–14 лет</span></div></div>
+      <div class="course"><div class="ph"><img src="assets/img/competition.jpg" alt="3D-моделирование"></div><div class="bd"><h3>3D-моделирование</h3><p>Трёхмерное проектирование и печать — от идеи до готовой модели.</p><span class="pill">Школьникам</span></div></div>
+      <div class="course"><div class="ph"><img src="assets/img/events.jpg" alt="Скорочтение"></div><div class="bd"><h3>Скорочтение и суперпамять</h3><p>Быстрое и осмысленное чтение, концентрация внимания, техники запоминания.</p><span class="pill">4 уровня</span></div></div>
+      <div class="course"><div class="ph" style="background:linear-gradient(135deg,#1a86c7,#007dbf);display:flex;align-items:center;justify-content:center;font-size:60px">🇬🇧</div><div class="bd"><h3>Английский язык</h3><p>Коммуникативный формат в малых группах для детей и взрослых.</p><span class="pill">3 группы</span></div></div>
+      <div class="course"><div class="ph" style="background:linear-gradient(135deg,#f3921c,#e07600);display:flex;align-items:center;justify-content:center;font-size:60px">✏️</div><div class="bd"><h3>Подготовка к школе</h3><p>Чтение, письмо, математика, речь и навыки поведения в школьной среде.</p><span class="pill">Дошкольникам</span></div></div>
+      <div class="course"><div class="ph" style="background:linear-gradient(135deg,#007dbf,#00598a);display:flex;align-items:center;justify-content:center;font-size:60px">🎯</div><div class="bd"><h3>Профпрактика «Формат мышления»</h3><p>Профориентация для подростков: интересы, сильные стороны, будущая профессия.</p><span class="pill">Подросткам</span></div></div>
+      <div class="course"><div class="ph" style="background:linear-gradient(135deg,#1a86c7,#0f5a94);display:flex;align-items:center;justify-content:center;font-size:60px">📚</div><div class="bd"><h3>Подготовка к ОГЭ и ЕГЭ</h3><p>Математика, информатика, русский и английский язык.</p><span class="pill">Старшим классам</span></div></div>
+      <div class="course"><div class="ph" style="background:linear-gradient(135deg,#f3921c,#f3b34d);display:flex;align-items:center;justify-content:center;font-size:60px">🎭</div><div class="bd"><h3>Эмоциональный интеллект и КВН</h3><p>Уверенность, командность, творчество и навыки общения.</p><span class="pill">Группами</span></div></div>
+      <div class="course"><div class="ph" style="background:linear-gradient(135deg,#2b6fb0,#007dbf);display:flex;align-items:center;justify-content:center;font-size:60px">🗣️</div><div class="bd"><h3>Логопедия и психология</h3><p>Индивидуальное сопровождение развития речи и эмоций ребёнка.</p><span class="pill">Индивидуально</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPS -->
+<section class="sec" id="camps">
+  <div class="container split">
+    <div>
+      <span class="tag">Разумные каникулы</span>
+      <h2>Каникулы с пользой и удовольствием</h2>
+      <p class="lead" style="margin-bottom:16px">Развивающие смены и лагеря по робототехнике, где отдых сочетается с обучением, проектами и новыми друзьями.</p>
+      <ul class="check">
+        <li>Осенние, весенние и летние смены</li>
+        <li>Робототехника для начинающих и продолжающих</li>
+        <li>Соревнования, проекты и командная работа</li>
+        <li>Возраст 7–14 лет, малые группы</li>
+      </ul>
+      <a href="#contacts" class="btn" style="margin-top:22px">Узнать о ближайшей смене</a>
+    </div>
+    <img src="assets/img/competition.jpg" alt="Разумные каникулы РЕЛЕ">
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec rev" id="reviews">
+  <div class="container">
+    <span class="tag">Отзывы</span>
+    <h2>Нам доверяют семьи</h2>
+    <p class="lead">Оценка сообщества ВКонтакте — 5,0. Вот что говорят родители наших учеников.</p>
+    <div class="grid g3">
+      <div class="quote"><div class="stars">★★★★★</div><p>«Ребёнок впервые сам просит идти на занятия. Робототехника открыла в нём интерес к технике и командной работе».</p><div class="who">— мама ученика</div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>«Малые группы и внимательные педагоги. За полгода на скорочтении сын стал читать быстрее и с удовольствием».</p><div class="who">— родитель, скорочтение</div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>«РЕЛЕ — это не только уроки, но и тёплое сообщество: ярмарки, дни открытых дверей, живое общение».</p><div class="who">— семья клуба РЕЛЕ</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REPORTS -->
+<section class="sec" id="reports">
+  <div class="container">
+    <span class="tag">Открытость</span>
+    <h2>Публичные отчёты</h2>
+    <p class="lead">Мы открыто рассказываем о своей работе: направления, события, результаты и планы.</p>
+    <div class="grid" style="gap:16px">
+      <div class="report"><div class="doc">📄</div><b>Публичный отчёт за 2024 год</b><a class="btn" href="assets/docs/Публичный_отчет_РЕЛЕ_2024.pdf" target="_blank">Скачать PDF</a></div>
+      <div class="report"><div class="doc">📄</div><b>Публичный отчёт за 2025 год</b><a class="btn" href="assets/docs/Публичный_отчет_РЕЛЕ_2025.pdf" target="_blank">Скачать PDF</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SVEDENIYA -->
+<section class="sec courses" id="svedeniya">
+  <div class="container">
+    <span class="tag">Обязательный раздел</span>
+    <h2>Сведения об образовательной организации</h2>
+    <p class="lead">Информация размещается в соответствии со ст. 29 ФЗ «Об образовании в РФ» и Постановлением Правительства РФ № 1802.</p>
+    <details open><summary>Основные сведения</summary><div class="in">
+      <b>Полное наименование:</b> Частное общеобразовательное учреждение «Средняя общеобразовательная школа “РЕЛЕ”».<br>
+      <b>Сокращённое:</b> ЧОУ «СОШ “РЕЛЕ”». <b>Дата создания:</b> 06.08.2021.<br>
+      <b>Учредитель, адрес, режим работы:</b> см. раздел «Контакты».</div></details>
+    <details><summary>Документы</summary><div class="in">Устав, лицензия на образовательную деятельность, свидетельство о государственной регистрации, локальные нормативные акты, правила приёма, отчёт о результатах самообследования, <a href="#reports" style="color:var(--blue)">публичные отчёты</a>. <em>(Загрузите сканы документов в этот раздел.)</em></div></details>
+    <details><summary>Образование</summary><div class="in">Реализуемые программы общего образования (1–9 классы) и дополнительного образования: робототехника, 3D-моделирование, скорочтение, английский язык, подготовка к школе, профпрактика и др. Формы обучения, сроки, численность обучающихся.</div></details>
+    <details><summary>Руководство и педагогический состав</summary><div class="in">Руководитель организации, сведения о педагогических работниках: должности, образование, квалификация, преподаваемые дисциплины. <em>(Заполните по актуальным данным команды.)</em></div></details>
+    <details><summary>Материально-техническое обеспечение</summary><div class="in">Оборудованные учебные кабинеты, робототехнические наборы и техника, условия питания и охраны здоровья, доступная среда, электронные образовательные ресурсы.</div></details>
+    <details><summary>Финансово-хозяйственная деятельность</summary><div class="in">Финансовое обеспечение осуществляется за счёт внебюджетных источников (оплата образовательных услуг). Бюджетное финансирование не привлекается. Объём образовательной деятельности по договорам об оказании платных образовательных услуг — <em>указывается за отчётный период</em>.</div></details>
+    <details><summary>Платные образовательные услуги</summary><div class="in">Порядок оказания платных образовательных услуг, образец договора, документ об утверждении стоимости обучения. Актуальные цены — по запросу и в разделе «Контакты».</div></details>
+    <details><summary>Вакантные места для приёма (перевода)</summary><div class="in">Информация о количестве вакантных мест по каждой образовательной программе. <em>(Обновляется по мере необходимости.)</em></div></details>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="sec contacts" id="contacts">
+  <div class="container">
+    <span class="tag">Контакты</span>
+    <h2>Запишитесь на пробное занятие</h2>
+    <p class="lead">Ответим на вопросы и подберём программу для вашего ребёнка.</p>
+    <div class="cbox">
+      <div class="cinfo">
+        <p><span class="k">Адрес</span>Санкт-Петербург, Свердловская набережная, д. 60, оф. 106</p>
+        <p><span class="k">Телефон</span><a href="tel:+79212633771">+7 (921) 263-37-71</a></p>
+        <p><span class="k">E-mail</span><a href="mailto:info@releclub.com">info@releclub.com</a></p>
+        <p><span class="k">Мы в соцсетях</span></p>
+        <div class="socials">
+          <a href="https://vk.com/releclub" target="_blank" title="ВКонтакте">VK</a>
+          <a href="https://t.me/clubrele" target="_blank" title="Telegram">TG</a>
+        </div>
+        <a href="https://t.me/clubrele" target="_blank" class="btn" style="margin-top:24px">Написать в Telegram</a>
+      </div>
+      <div class="map">
+        <iframe loading="lazy" src="https://yandex.ru/map-widget/v1/?text=Санкт-Петербург%20Свердловская%20набережная%2060&z=16" title="Карта"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a href="#" class="logo" style="color:#fff;margin-bottom:14px"><img src="assets/img/logo.png" alt="РЕЛЕ" style="height:44px">РЕЛЕ</a>
+        <p class="req">Клуб реального образования и досуга РЕЛЕ.<br>Частная школа и центр развития детей в Санкт-Петербурге.<br>Также в ВКонтакте: «Семейная Не школа РЕЛЕ | СПб».</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <p><a href="#about">О школе</a></p>
+        <p><a href="#courses">Направления</a></p>
+        <p><a href="#camps">Разумные каникулы</a></p>
+        <p><a href="#reports">Публичные отчёты</a></p>
+        <p><a href="#svedeniya">Сведения об организации</a></p>
+      </div>
+      <div>
+        <h4>Реквизиты</h4>
+        <p class="req">ЧОУ «СОШ “РЕЛЕ”»<br>ОГРН 1217800120834<br>ИНН 7806589730 · КПП 780601001<br>195160, СПб, Свердловская наб., д. 58, лит. А, пом. 46-Н</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2021–2026 ЧОУ «СОШ “РЕЛЕ”». Все права защищены.</span>
+      <span>clubrele.ru · vk.com/releclub · t.me/clubrele</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
